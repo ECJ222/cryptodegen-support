@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+
+@font-face {
+  font-family: 'Hanken Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/HankenSans-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hanken Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/HankenSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hanken Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/HankenSans-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hanken Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/HankenSans-Bold.otf') format('opentype');
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  font-family: 'Material Icons';
+  font-style: normal;
+  user-select: none;
+}
+
+.ml-4 {
+  margin-left: 0.25rem;
+}
+
+/* Input placeholder */
+::placeholder {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+::-moz-placeholder {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.form-group input {
+  border: 1px solid #9999bc;
+}
+
+.form-group .password-field {
+  border: 1px solid #9999bc;
+}
+
+.form-group .phone-field {
+  border: 1px solid #9999bc;
+}
+
+.form-group input:focus {
+  border: 1px solid rgba(43, 201, 180, 1);
+  outline: 0px;
+}
+
+.form-group input:focus + label {
+  color: rgba(43, 201, 180, 1);
+}
+
+.form-group.error input:focus + label {
+  color: #f40303;
+}
+
+.form-group.error input:focus {
+  border: 1px solid #f40303;
+  outline: 0px;
+}
+
+.form-group .password-field:focus-within {
+  border: 1px solid rgba(43, 201, 180, 1);
+  outline: 0px;
+}
+
+.form-group .phone-field:focus-within {
+  border: 1px solid rgba(43, 201, 180, 1);
+  outline: 0px;
+}
+
+
+.form-group .password-field:focus-within + label {
+  color: rgba(43, 201, 180, 1);
+}
+
+.form-group .password-field input:focus {
+  border: none;
+  outline: 0;
+}
+
+.form-group .password-field i {
+  cursor: pointer;
+}
+
+input[type='password']::placeholder {
+  transform: translate3d(0, 5px, 0);
+}
+
+input[type='password']::-moz-placeholder {
+  transform: translate3d(0, 5px, 0);
+}
+
+input[type='password']:-ms-input-placeholder {
+  transform: translate3d(0, 5px, 0);
+}
+
+input[type='password']::-ms-input-placeholder {
+  transform: translate3d(0, 5px, 0);
+}
+
+input[type='text']::placeholder {
+  transform: translate3d(0, 2px, 0);
+}
+
+input[type='text']::-moz-placeholder {
+  transform: translate3d(0, 2px, 0);
+}
+
+input[type='text']:-ms-input-placeholder {
+  transform: translate3d(0, 2px, 0);
+}
+
+input[type='text']::-ms-input-placeholder {
+  transform: translate3d(0, 2px, 0);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  outline: none;
+  box-shadow: 0 0 0 30px #f5f7fc inset !important;
+  -webkit-box-shadow: 0 0 0 30px #f5f7fc inset !important;
+}
+
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  border: 1px solid rgba(43, 201, 180, 1) !important;
+}
+
+.password-field input:-webkit-autofill,
+.password-field input:-webkit-autofill:hover,
+.password-field input:-webkit-autofill:focus,
+.password-field input:-webkit-autofill:active {
+  border: none !important;
+}
+
+.spinner2 {
+  animation: spinner 600ms linear infinite;
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transform-origin: center;
+  border-top-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn-wrapper {
+  border: none;
+  width: max-content;
+  background: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  width: 100%;
+  height: 50px;
+  padding: 0 10%;
+  font-size: 1rem;
+  background: rgba(43, 201, 180, 1);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
