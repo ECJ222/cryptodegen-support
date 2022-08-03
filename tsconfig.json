@@ -15,11 +15,11 @@
     "baseUrl": ".",
     "typeRoots": [
       "./node_modules/@types",
-      "./node_modules/robin.io-vue2/dist/types"
+      "./node_modules/robinapp-vue/dist/types"
     ],
     "types": [
       "webpack-env",
-      "robin.io-vue2"
+      "robinapp-vue"
     ],
     "paths": {
       "@/*": [
